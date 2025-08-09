@@ -28,20 +28,20 @@ This is my first foundational cloud project, marking the start of my **cloud eng
 
 
 3. Run the script manually
-    ```bash
+    ```python
     python download_todays_data.py
     ```
 
 ## **Note**
 Locally, I can simulate cloud logging with cron:
-    ```bash
-    * * * * * /home/ubuntu/cloud_lab_sim/.venv/bin/python /home/ubuntu/cloud_lab_sim/download_todays_data.py >> /home/ubuntu/cloud_lab_sim/cron.log 2>&1
-    ```
-    This will run the script every minute and log output to cron.log. To change the time, I can change * value to run it when I want.
+```bash
+* * * * * /home/ubuntu/cloud_lab_sim/.venv/bin/python /home/ubuntu/cloud_lab_sim/download_todays_data.py >> /home/ubuntu/cloud_lab_sim/cron.log 2>&1
+```
+This will run the script every minute and log output to cron.log. To change the time, I can change * value to run it when I want.
 
 Logging
-    Cloud style: Logs are written to stdout and stderr using Python's logging module.
-    Local simulation: Redirect cron output to a file to preserve logs.
+Cloud style: Logs are written to stdout and stderr using Python's logging module.
+Local simulation: Redirect cron output to a file to preserve logs.
 
 
 ---
