@@ -39,7 +39,7 @@ Locally, I can simulate cloud logging with cron:
 ```
 This will run the script every minute and log output to cron.log. To change the time, I can change * value to run it when I want.
 
-Logging
+### Logging
 
 Cloud style: Logs are written to stdout and stderr using Python's logging module.
 
